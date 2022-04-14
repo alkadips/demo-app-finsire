@@ -4,7 +4,6 @@ import {
   DATASET_BASELINE_URL,
   DATASET_1,
   DASHBOARD_TITLE,
-  DASHBOARD_DESC,
 } from './common/constants';
 import { Header, Body } from './components';
 import styled from 'styled-components';
@@ -25,7 +24,7 @@ const App = () => {
 
   return (
     <Container data-testid="container">
-      <Header heading={DASHBOARD_TITLE} description={DASHBOARD_DESC} />
+      <Header heading={DASHBOARD_TITLE} />
       {dataSet && !isLoading && <Body data={dataSet} onReload={onReload} />}
     </Container>
   );

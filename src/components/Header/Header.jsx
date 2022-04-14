@@ -19,21 +19,12 @@ const variants = {
 export const Header = ({ heading, description }) => {
   return (
     <StyledHeader data-testid="header">
-      <Logo
-        src={logo}
-        alt="logo"
-        variants={variants}
-        initial="unload"
-        animate="load"
-        exit="unload"
-      />
+     
       <Heading data-testid="heading">{heading}</Heading>
       {description && (
         <Description data-testid="description">
           {description}
-          <GitHubLink href="https://github.com/briang123/stats-challenge-in-react-js">
-            View on GitHub
-          </GitHubLink>
+         
         </Description>
       )}
     </StyledHeader>
