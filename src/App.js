@@ -10,7 +10,7 @@ import styled from 'styled-components';
 import './theme/nautical.css';
 
 const App = () => {
-  const [{ data: response, isLoading, isError, error, url }, setUrl] = useDataFetch(
+  const [{ data: response, isLoading }, setUrl] = useDataFetch(
     DATASET_1.url,
     []
   );

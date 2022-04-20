@@ -1,20 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import logo from './../../logo.svg';
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
 
-const variants = {
-  load: {
-    scale: 2,
-    transition: {
-      type: 'spring',
-    },
-  },
-  unload: {
-    scale: 0.75,
-  },
-};
+
 
 export const Header = ({ heading, description }) => {
   return (
@@ -61,13 +49,7 @@ const StyledHeader = styled.div`
   }
 `;
 
-const Logo = styled(motion.img)`
-  height: 15vmin;
-  pointer-events: none;
-  @media (min-width: 600px) {
-    height: 6vmin;
-  }
-`;
+
 
 const Heading = styled.p`
   padding: 0;
@@ -85,6 +67,3 @@ const Description = styled.div`
   }
 `;
 
-const GitHubLink = styled.a`
-  margin-left: 3px;
-`;
